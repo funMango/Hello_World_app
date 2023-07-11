@@ -11,6 +11,7 @@ class ViewController: UIViewController {
     let timeSelector: Selector = #selector(ViewController.updateTime)
     let inteval = 1.0
     var count = 0
+    var alarmTime: String?
     
     @IBOutlet var IblCurrentTime: UILabel!
     @IBOutlet var IblPickerTime: UILabel!
@@ -18,7 +19,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Timer.scheduledTimer(timeInterval: inteval, target: self, selector: timeSelector, userInfo: nil, repeats: true)
+        Timer.scheduledTimer(timeInterval: inteval, target: self, selector: timeSelector,
+                             userInfo: nil, repeats: true)
     }
     
     @IBAction func changeDatePicker(_ sender: UIDatePicker) {
@@ -27,15 +29,25 @@ class ViewController: UIViewController {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm EEE"
         IblPickerTime.text = "선택시간: " + formatter.string(from: datePickerView.date)
+        
+        formatter.dateFormat = "hh:mm aaa"
+        alarmTime = formatter.string(from: datePickerView.date)
     }
     
     @objc func updateTime() {
-//        IblCurrentTime.text = String(count)
-//        count += 1
         let date = NSDate()
         
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd EEE HH:mm:ss"
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss EEE"
         IblCurrentTime.text = "현재시간: " + formatter.string(from: date as Date)
+        
+        formatter.dateFormat = "hh:mm aaa"
+        let currentTime = formatter.string(from: date as Date)
+        
+        if (alarmTime == currentTime) {
+            view.backgroundColor = UIColor.red
+        } else {
+            view.backgroundColor = UIColor.white
+        }
     }
 }
