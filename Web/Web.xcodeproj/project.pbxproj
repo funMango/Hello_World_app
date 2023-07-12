@@ -13,6 +13,7 @@
 		5AFF3DAB2A5E3C7E002BC76E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AFF3DA92A5E3C7E002BC76E /* Main.storyboard */; };
 		5AFF3DAD2A5E3C7F002BC76E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AFF3DAC2A5E3C7F002BC76E /* Assets.xcassets */; };
 		5AFF3DB02A5E3C7F002BC76E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AFF3DAE2A5E3C7F002BC76E /* LaunchScreen.storyboard */; };
+		5AFF3DB82A5E7DDC002BC76E /* htmlView.html in Resources */ = {isa = PBXBuildFile; fileRef = 5AFF3DB72A5E7DDC002BC76E /* htmlView.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5AFF3DAC2A5E3C7F002BC76E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AFF3DAF2A5E3C7F002BC76E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AFF3DB12A5E3C7F002BC76E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AFF3DB72A5E7DDC002BC76E /* htmlView.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = htmlView.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				5AFF3DA52A5E3C7E002BC76E /* SceneDelegate.swift */,
 				5AFF3DA72A5E3C7E002BC76E /* ViewController.swift */,
 				5AFF3DA92A5E3C7E002BC76E /* Main.storyboard */,
+				5AFF3DB72A5E7DDC002BC76E /* htmlView.html */,
 				5AFF3DAC2A5E3C7F002BC76E /* Assets.xcassets */,
 				5AFF3DAE2A5E3C7F002BC76E /* LaunchScreen.storyboard */,
 				5AFF3DB12A5E3C7F002BC76E /* Info.plist */,
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AFF3DB82A5E7DDC002BC76E /* htmlView.html in Resources */,
 				5AFF3DB02A5E3C7F002BC76E /* LaunchScreen.storyboard in Resources */,
 				5AFF3DAD2A5E3C7F002BC76E /* Assets.xcassets in Resources */,
 				5AFF3DAB2A5E3C7E002BC76E /* Main.storyboard in Resources */,
