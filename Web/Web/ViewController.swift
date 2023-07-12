@@ -21,7 +21,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad()        
         myWebView.navigationDelegate = self
         loadWebPage("http://2sam.net")
     }
