@@ -46,7 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1090.8396946564885" y="-401.40845070422534"/>
+            <point key="canvasLocation" x="1050" y="-677"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bQ5-Hm-pV9">
@@ -61,6 +61,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Nt3-5J-0Qf"/>
                         <segue destination="EzD-uD-J9w" kind="relationship" relationship="viewControllers" id="7lP-hU-lql"/>
                         <segue destination="dau-pv-WQI" kind="relationship" relationship="viewControllers" id="lsn-I2-bei"/>
+                        <segue destination="0l8-vf-FN7" kind="relationship" relationship="viewControllers" id="aKO-qo-H3S"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R5L-QE-mUN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -107,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XrH-mh-9uY" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2062" y="-27"/>
+            <point key="canvasLocation" x="2181" y="-537"/>
         </scene>
         <!--Date View Controller-->
         <scene sceneID="7R5-Xs-olT">
@@ -152,6 +153,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fub-Rr-sgu" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1091" y="435"/>
+        </scene>
+        <!--Picker View Controller-->
+        <scene sceneID="i8t-bP-k5W">
+            <objects>
+                <viewController id="0l8-vf-FN7" customClass="PickerViewController" customModule="Tab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nwc-tU-512">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EXf-2o-CXC">
+                                <rect key="frame" x="0.0" y="59" width="393" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="0l8-vf-FN7" id="FnZ-P7-O5q"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Selected Item:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URO-WU-bDU">
+                                <rect key="frame" x="16" y="229" width="126" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1sF-6m-i4g">
+                                <rect key="frame" x="150" y="229" width="243" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y8V-YA-vec">
+                                <rect key="frame" x="16" y="283" width="361" height="417"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="o5z-QW-0jC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="8Qn-xW-1wC"/>
+                    <connections>
+                        <outlet property="imageView" destination="y8V-YA-vec" id="jAb-uz-Cqw"/>
+                        <outlet property="lblImageFileName" destination="1sF-6m-i4g" id="wnq-8j-Hmv"/>
+                        <outlet property="pickerImage" destination="EXf-2o-CXC" id="dEP-i1-7dk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xwq-9I-DSE" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2181" y="158"/>
         </scene>
     </scenes>
     <resources>
