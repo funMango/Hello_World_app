@@ -17,6 +17,7 @@
 		5AAD5A1A2A600E5D0061147C /* lamp_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AAD5A182A600E5D0061147C /* lamp_off.png */; };
 		5AAD5A1C2A600E9A0061147C /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD5A1B2A600E9A0061147C /* ImageViewController.swift */; };
 		5AAD5A222A60105C0061147C /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD5A212A60105C0061147C /* DateViewController.swift */; };
+		5AAD5A242A601CB50061147C /* File.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AAD5A232A601CB50061147C /* File.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		5AAD5A182A600E5D0061147C /* lamp_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lamp_off.png; sourceTree = "<group>"; };
 		5AAD5A1B2A600E9A0061147C /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		5AAD5A212A60105C0061147C /* DateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateViewController.swift; path = ../../DatePicker/DatePicker/DateViewController.swift; sourceTree = "<group>"; };
+		5AAD5A232A601CB50061147C /* File.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = File.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			children = (
 				5AAD5A182A600E5D0061147C /* lamp_off.png */,
 				5AAD5A172A600E5D0061147C /* lamp_on.png */,
+				5AAD5A232A601CB50061147C /* File.png */,
 				5AAD5A032A600D130061147C /* AppDelegate.swift */,
 				5AAD5A052A600D130061147C /* SceneDelegate.swift */,
 				5AAD5A072A600D130061147C /* ViewController.swift */,
@@ -140,6 +143,7 @@
 				5AAD5A192A600E5D0061147C /* lamp_on.png in Resources */,
 				5AAD5A102A600D150061147C /* LaunchScreen.storyboard in Resources */,
 				5AAD5A1A2A600E5D0061147C /* lamp_off.png in Resources */,
+				5AAD5A242A601CB50061147C /* File.png in Resources */,
 				5AAD5A0D2A600D150061147C /* Assets.xcassets in Resources */,
 				5AAD5A0B2A600D130061147C /* Main.storyboard in Resources */,
 			);

@@ -15,5 +15,13 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func btnMovieImageView(_ sender: UIButton) {
+        tabBarController?.selectedIndex = 1
+    }
+    
+    
+    @IBAction func btnMoveDatePickerView(_ sender: UIButton) {
+        tabBarController?.selectedIndex = 2
+    }
 }
 
