@@ -13,6 +13,7 @@ var itemsImageFile = ["cart.png", "clock.png", "pencil.png"]
 class TableViewController: UITableViewController {
 
     @IBOutlet var tvListView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +22,10 @@ class TableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         self.navigationItem.leftBarButtonItem = self.editButtonItem
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tvListView.reloadData()
     }
 
     // MARK: - Table view data source
@@ -68,9 +73,7 @@ class TableViewController: UITableViewController {
         itemsImageFile.insert(itemImageToMove, at: (to as NSIndexPath).row)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        tvListView.reloadData()
-    }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "sgDetail" { 
