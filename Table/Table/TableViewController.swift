@@ -20,7 +20,7 @@ class TableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.navigationItem.leftBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
@@ -55,6 +55,19 @@ class TableViewController: UITableViewController {
         }
     }
     
+    override func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
+        return "삭제"
+    }
+        
+    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+        let itemToMove = items[(fromIndexPath as NSIndexPath).row]
+        let itemImageToMove = itemsImageFile[(fromIndexPath as NSIndexPath).row]
+        items.remove(at: (fromIndexPath as NSIndexPath).row)
+        itemsImageFile.remove(at: (fromIndexPath as NSIndexPath).row)
+        items.insert(itemToMove, at: (to as NSIndexPath).row)
+        itemsImageFile.insert(itemImageToMove, at: (to as NSIndexPath).row)
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -68,12 +81,9 @@ class TableViewController: UITableViewController {
     
     
 
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
+    
+    
+    
 
     /*
     // Override to support conditional rearranging of the table view.
